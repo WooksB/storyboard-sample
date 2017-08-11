@@ -20,6 +20,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func openAD(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "grayscene")
+        if let newVC = vc {
+
+            self.present(newVC, animated: true, completion: nil)
+        }
+
+    }
 
 }
 
