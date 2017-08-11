@@ -70,6 +70,13 @@
                                 <rect key="frame" x="161" y="219" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="axh-fL-fhm">
+                                <rect key="frame" x="108" y="394" width="159" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.90763194091370236" blue="0.47127655550629466" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
@@ -83,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gN-Bf-QiJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1078" y="-566"/>
+            <point key="canvasLocation" x="1077.5999999999999" y="-566.26686656671666"/>
         </scene>
         <!--Gray View Controller-->
         <scene sceneID="EX8-qM-Vv1">
