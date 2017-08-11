@@ -51,13 +51,71 @@
                     <view key="view" contentMode="scaleToFill" id="RdF-SN-Icg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJ6-09-erH">
+                                <rect key="frame" x="161" y="318" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="다음화면"/>
+                                <connections>
+                                    <action selector="nextBtnClicked:" destination="Ecc-PG-4ya" eventType="touchUpInside" id="A3E-pB-tSX"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cwq-IP-R0g">
+                                <rect key="frame" x="161" y="219" width="51" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.90763194091370236" blue="0.47127655550629466" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="First View Controller" id="BmV-f3-se3"/>
+                    <connections>
+                        <outlet property="firstSwitch" destination="cwq-IP-R0g" id="2gg-iA-t08"/>
+                        <outlet property="nextBtn" destination="jJ6-09-erH" id="sKb-A3-YhG"/>
+                        <segue destination="3qe-Kq-Ciz" kind="show" identifier="second" id="Bn3-BQ-6zm"/>
+                        <segue destination="kll-9W-E5V" kind="show" identifier="third" id="hq5-et-G4j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6gN-Bf-QiJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1078" y="-566"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="OfX-cb-e6F">
+            <objects>
+                <viewController id="3qe-Kq-Ciz" customClass="SecondViewController" customModule="StoryboardSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="RLP-8D-tIn"/>
+                        <viewControllerLayoutGuide type="bottom" id="ffp-yo-G8N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ctj-Hp-A5W">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="0.71402560608862353" blue="0.65349344913753193" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second View Controller" id="O6X-YA-cFi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DO2-tb-rKH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1935" y="-994"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="o08-Kz-m59">
+            <objects>
+                <viewController id="kll-9W-E5V" customClass="ThirdViewController" customModule="StoryboardSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qC2-zg-8Cu"/>
+                        <viewControllerLayoutGuide type="bottom" id="AsD-iC-UNh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h8h-JT-YPf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.73672558529202714" green="1" blue="0.77432422261811396" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Third View Controller" id="RtK-Qe-YVh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fkA-EY-ERx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1935" y="-243"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="L9s-G8-cDZ">

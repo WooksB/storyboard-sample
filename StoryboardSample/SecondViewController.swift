@@ -1,5 +1,5 @@
 //
-//  FirstViewController.swift
+//  SecondViewController.swift
 //  StoryboardSample
 //
 //  Created by ktds 11 on 2017. 8. 11..
@@ -8,10 +8,8 @@
 
 import UIKit
 
-class FirstViewController: UIViewController {
+class SecondViewController: UIViewController {
 
-    @IBOutlet weak var nextBtn: UIButton!
-    @IBOutlet weak var firstSwitch: UISwitch!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,14 +22,6 @@ class FirstViewController: UIViewController {
     }
     
 
-    @IBAction func nextBtnClicked(_ sender: Any) {
-        if firstSwitch.isOn {
-            self.performSegue(withIdentifier: "second", sender: self)
-        }
-        else {
-            self.performSegue(withIdentifier: "third", sender: self)
-        }
-    }
     /*
     // MARK: - Navigation
 
